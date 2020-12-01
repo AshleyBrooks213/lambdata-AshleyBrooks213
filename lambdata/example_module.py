@@ -9,6 +9,8 @@ def df_cleaner(df):
 
     return df.dropna()
 
+print("it half way worked")
+
 def null_count(df):
     """Returns the sum of missing values"""
     return df.isnull().sum()
