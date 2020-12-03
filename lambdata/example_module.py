@@ -11,7 +11,7 @@ def df_cleaner(df):
 
 
 """Check to make sure that code works"""
-print("it half way worked")
+print("it half way worked") 
 
 
 def null_count(df):
@@ -19,7 +19,7 @@ def null_count(df):
     return df.isnull().sum()
 
 
-FAVORITE_ANIMALS = ['dolphin', 'whale', 'seadragon', 'wolf', 'tiger']
+FAVORITE_ANIMALS = [['dolphin', 'whale', 'seadragon', 'wolf', 'tiger']]
 
 
 """Check to make sure code works all the way through"""
