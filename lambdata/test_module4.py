@@ -20,7 +20,7 @@ class ExampleTests(unittest.TestCase):
         """testing that increment function works as expected"""
         x0 = 100
         y0 = increment(x0)
-        self.assertEqua(y0, 101)
+        self.assertEqual(y0, 101)
 
         x1 = 110
         y1 = increment(x1)
