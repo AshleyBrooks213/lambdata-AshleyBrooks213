@@ -19,8 +19,15 @@ def null_count(df):
     return df.isnull().sum()
 
 
-FAVORITE_ANIMALS = [['dolphin', 'whale', 'seadragon', 'wolf', 'tiger']]
+FAVORITE_ANIMALS = ['dolphin', 'whale', 'seadragon', 'wolf', 'tiger']
+FAVORITE_COLORS = ['pink', 'blue', 'purple', 'green']
 
+def add(x1, x2):
+    return x1 + x2
+    
+
+def increment(x):
+    return x + 1
 
 """Check to make sure code works all the way through"""
 print("it worked!")
