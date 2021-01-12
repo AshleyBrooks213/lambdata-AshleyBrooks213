@@ -7,17 +7,16 @@ import random
 
 
 """Examples for assignment"""
-class null_cleaner(pd.DataFrame):
+
+
+class df(pd.DataFrame):
     """Clean a df of nulls"""
     def df_cleaner(self):
         return self.dropna()
 
 
     def null_count(self):
-        """
-        Check a dataframe for nulls and return the 
-        number of missing values
-        """
+        """Total number of nulls"""
         return self.isnull().sum().sum()
 
 
