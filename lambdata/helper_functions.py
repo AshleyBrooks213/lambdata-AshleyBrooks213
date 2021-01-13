@@ -9,18 +9,10 @@ def df_cleaner(df):
     return df.dropna()
 
 
-"""Check to make sure that code works"""
-print("df_cleaner is working!") 
-
-
 def null_count(df):
     """Check a dataframe for nulls and return the 
     number of missing values"""
     return df.isnull().sum().sum()
-
-
-"""Check to make sure that code works"""
-print("null_count is working!")
 
 
 def train_test_split(df, frac):
@@ -37,10 +29,6 @@ def train_test_split(df, frac):
     return train, test
 
 
-"""Check to make sure that code works"""
-print("train_test_split is working!")
-
-
 def randomize(df, seed):
     """
     Testing randomize(df) function: Develop a 
@@ -52,10 +40,6 @@ def randomize(df, seed):
     """Randomly sample 100% of your df"""
     df = df.sample(frac=1, random_state=seed)#.reset_index(drop=True)
     return df
-
-
-"""Check to make sure that code works"""
-print("randomize is working!")
 
     
 def addy_split(add_series):
@@ -75,11 +59,6 @@ def addy_split(add_series):
         zipcodes.append(zipcode)
         df = pd.DataFrame({'city': cities, 'state': states, 'zip': zipcodes})
     return df
-
-
-
-"""Check to make sure that code works"""
-print("addy_split is working!")
 
 
 def abbr_2_st(state_series, abbr_2_st=True):
@@ -172,6 +151,3 @@ def add(x1, x2):
 
 def increment(x):
     return x + 1
-
-"""Check to make sure code works all the way through"""
-print("it worked!")
