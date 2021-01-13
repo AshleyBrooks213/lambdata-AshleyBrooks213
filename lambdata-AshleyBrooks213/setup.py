@@ -9,7 +9,7 @@ REQUIRED = [
     "pandas"
 ]
 
-with open(README.md, "r", encoding="utf-8") as fh:
+with open(README.md, "r") as fh:
     LONG_DESCRIPTION = fh.read()
 
 
