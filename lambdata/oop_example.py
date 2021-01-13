@@ -72,7 +72,7 @@ class Animal:
     """General Representation of Animals"""
 
 
-    def __init__(self, name, weight, diet_type):
+    def __init__(self,name,weight,diet_type):
         self.name = str(name)
         self.weight = float(weight)
         self.diet_type = diet_type
